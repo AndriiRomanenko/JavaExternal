@@ -12,7 +12,7 @@
 ### 1. Task 1
 [to contents](#JavaExternal_06_03_2018)
 
-Используя циклы и метод: System.out.print("* "), **System.out.print("  "), System.out.print("\n")
+Используя циклы и метод: System.out.print("* "), System.out.print("  "), System.out.print("\n")
   
 Выведите на экран: 
 * прямоугольник [Rectangle.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/one/Rectangle.java)
