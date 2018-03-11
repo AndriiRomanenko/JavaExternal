@@ -36,9 +36,5 @@
 Дана целочисленная прямоугольная матрица. 
 1. Упорядочить столбцы по убыванию среднего значения. [SortingColumnsByDescendingOrder.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/SortingColumnsByDescendingOrder.java)
 2. Упорядочить строки, по возрастанию по самой длинной серии одинаковых элементов. [SortingRowsByAscendingOrder.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/SortingRowsByAscendingOrder.java)
-3. Дана квадратная матрица A порядка M (M — нечетное число). Начи-
-ная с элемента A1,1 и перемещаясь по часовой стрелке, вывести все ее эле-
-менты по спирали: первая строка, последний столбец, последняя строка в 
-обратном  порядке,  первый  столбец  в  обратном  порядке,  оставшиеся  эле-
-менты второй строки и т. д.; последним выводится центральный элемент 
+3. Дана квадратная матрица A порядка M (M — нечетное число). Начиная с элемента A1,1 и перемещаясь по часовой стрелке, вывести все ее элементы по спирали: первая строка, последний столбец, последняя строка в обратном  порядке,  первый  столбец  в  обратном  порядке,  оставшиеся  элементы второй строки и т. д.; последним выводится центральный элемент 
 матрицы. [Spiral.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/Spiral.java)
