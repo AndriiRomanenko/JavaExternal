@@ -11,6 +11,8 @@
 - [II. Lesson 2](#i-Lesson-2)
     - [1. Task 1](#1-Task-1)
     - [2. Task 2](#2-Task-2)
+- [III. Lesson 3](#i-Lesson-3)
+    
     
 ## I. Lesson 1
 
@@ -55,3 +57,5 @@ Cоздать динамический массив из разных фигур
 [to contents](#java-external)
 
 Cоздать класс Polygon для описания фигур разной размерности. [Polygon.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
+
+## III. Lesson 3
