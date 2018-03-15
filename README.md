@@ -13,7 +13,7 @@
 ## I. Lesson 1
 
 ### 1. Task 1
-[to contents](#JavaExternal_06_03_2018)
+[to contents](#javaExternal_06_03_2018)
 
 Используя циклы и метод: System.out.print("* "), System.out.print("  "), System.out.print("\n")
   
@@ -26,7 +26,7 @@
 Класс [Main.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/one/Main.java) для тестового запуска классов
 
 ### 2. Task 2
-[to contents](#JavaExternal_06_03_2018)
+[to contents](#javaExternal_06_03_2018)
 
 Сортировка последовательности  
 1. Упорядочить одномерный масиве вначале отрицательные повозрастанию
@@ -34,7 +34,7 @@
 2. В одномерном массиве сначала положительные потом отрицательные за О(n). [SortingPlusMinus.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/two/SortingPlusMinus.java)
 
 ### 3. Task 3
-[to contents](#JavaExternal_06_03_2018)
+[to contents](#javaExternal_06_03_2018)
 
 Дана целочисленная прямоугольная матрица. 
 1. Упорядочить столбцы по убыванию среднего значения. [SortingColumnsByDescendingOrder.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/SortingColumnsByDescendingOrder.java)
@@ -45,11 +45,11 @@
 ## II. Lesson 2
 
 ### 1. Task 1
-[to contents](#JavaExternal_06_03_2018)
+[to contents](#javaExternal_06_03_2018)
 
 Cоздать динамический массив из разных фигур и вывести информацию на экран. [FiguresArray.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/FiguresArray.java)
 
 ### 2. Task 2
-[to contents](#JavaExternal_06_03_2018)
+[to contents](#javaExternal_06_03_2018)
 
 Cоздать класс Polygon для описания фигур разной размерности. [Polygon.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
