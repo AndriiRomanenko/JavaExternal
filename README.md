@@ -6,6 +6,9 @@
     - [1. Task 1](#1-Task-1)
     - [2. Task 2](#2-Task-2)
     - [3. Task 3](#3-Task-3)
+- [II. Lesson 2](#i-Lesson-2)
+    - [1. Task 1](#1-Task-1)
+    - [2. Task 2](#2-Task-2)
     
 ## I. Lesson 1
 
@@ -38,3 +41,15 @@
 2. Упорядочить строки, по возрастанию по самой длинной серии одинаковых элементов. [SortingRowsByAscendingOrder.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/SortingRowsByAscendingOrder.java)
 3. Дана квадратная матрица A порядка M (M — нечетное число). Начиная с элемента A1,1 и перемещаясь по часовой стрелке, вывести все ее элементы по спирали: первая строка, последний столбец, последняя строка в обратном  порядке,  первый  столбец  в  обратном  порядке,  оставшиеся  элементы второй строки и т. д.; последним выводится центральный элемент 
 матрицы. [Spiral.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/Spiral.java)
+
+## II. Lesson 2
+
+### 1. Task 1
+[to contents](#JavaExternal_06_03_2018)
+
+Cоздать динамический массив из разных фигур и вывести информацию на экран. [FiguresArray.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/FiguresArray.java)
+
+### 2. Task 2
+[to contents](#JavaExternal_06_03_2018)
+
+Cоздать класс Polygon для описания фигур разной размерности. [Polygon.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
