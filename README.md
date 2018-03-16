@@ -68,9 +68,9 @@ Cоздать класс Polygon для описания фигур разной
 
 Написать [программу](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/controller/VehicleHandler.java), создающую список объектов этих классов в динамической памяти. Программа должна содержать [меню](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/controller/Console.java), позволяющее осуществить проверку всех методов классов.
 
-1. Vehicle с наибольшей ценой 
-2. Найти механизм год выпуска 2000-2005 со скоростью выше 150 км\ч, и наименьшей ценой
-3. Из Масива Vehicle получить масив Car не старше 5 лет
-4. Из Масива Vehicle получить масив Ship не старше 5 лет, с  отсортированой ценой по убыванию
+1. Vehicle с наибольшей ценой. 
+2. Найти Vehicle год выпуска 2000-2005 со скоростью выше 150 км\ч, и наименьшей ценой.
+3. Из массива Vehicle получить массив Car не старше 5 лет.
+4. Из массива Vehicle получить массив Ship не старше 5 лет, с отсортированой ценой по убыванию.
 
 Запуск программы через класс [Main](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/Main.java)
