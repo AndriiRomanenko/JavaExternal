@@ -63,6 +63,7 @@ Cоздать класс Polygon для описания фигур разной
 
 ### 1. Task 1
 [to contents](#java-external)
+
 Создать абстрактный класс [CVehicle](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Vehicle.java). На его основе реализовать классы [CPlane](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Plane.java), [CCar](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Car.java) и [CShip](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Ship.java). Классы должны иметь возможность задавать и получать координаты, параметры средств передвижения(цена, скорость, год выпуска). Для самолета должна быть определена высота, для самолета и корабля - количество пассажиров. Для корабля - порт приписки.
 
 Написать [программу](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/controller/VehicleHandler.java), создающую список объектов этих классов в динамической памяти. Программа должна содержать [меню](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/controller/Console.java), позволяющее осуществить проверку всех методов классов.
