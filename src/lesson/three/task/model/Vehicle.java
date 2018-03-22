@@ -48,7 +48,7 @@ public abstract class Vehicle {
     public String toString() {
         return "[" + this.getClass().getSimpleName() +
                 ", coordinates: " + coordinates +
-                ", price: " + price +
+                ", price: " + String.format("%.2f",price) +
                 ", speed: " + speed +
                 ", yearOfIssue: " + yearOfIssue +
                 ']';

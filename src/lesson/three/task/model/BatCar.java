@@ -1,41 +1,26 @@
 package lesson.three.task.model;
 
 import lesson.three.task.service.IFly;
+import lesson.three.task.service.IMove;
+import lesson.three.task.service.ISwim;
 
-public class Plane extends Vehicle implements IFly {
+public class BatCar extends Vehicle implements ISwim, IMove, IFly {
     private double height;
-    private int numberOfPassengers;
     private Engine engine;
-    public Plane(Coordinate coordinates, double price, int speed,
-                 int yearOfIssue, double height, int numberOfPassengers, String typeOfEngine) {
+    public BatCar(Coordinate coordinates, double price, int speed, int yearOfIssue,
+                  double height, String typeOfEngine) {
         super(coordinates, price, speed, yearOfIssue);
         this.height = height;
-        this.numberOfPassengers = numberOfPassengers;
-        this.engine = new Engine(typeOfEngine);
+        this.engine = new BatCar.Engine(typeOfEngine);
     }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public int getNumberOfPassengers() {
-        return numberOfPassengers;
-    }
-
-    public void setNumberOfPassengers(int numberOfPassengers) {
-        this.numberOfPassengers = numberOfPassengers;
-    }
-
-    static class Engine {
+    public class Engine{
         private String typeOfEngine;
         public Engine(String typeOfEngine){
             this.typeOfEngine = typeOfEngine;
         }
     }
+    public Engine getEngine(){ return engine; }
+
     @Override
     public String toString() {
         return "[" + this.getClass().getSimpleName() +
@@ -44,7 +29,6 @@ public class Plane extends Vehicle implements IFly {
                 ", speed: " + super.getSpeed() +
                 ", yearOfIssue: " + super.getYearOfIssue() +
                 ", height: " + String.format("%.2f",height) +
-                ", numberOfPassengers: " + numberOfPassengers +
                 ", type of engine: " + engine.typeOfEngine +
                 ']';
     }

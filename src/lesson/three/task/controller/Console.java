@@ -1,11 +1,7 @@
 package lesson.three.task.controller;
 
-import lesson.three.task.model.Car;
-import lesson.three.task.model.Coordinate;
-import lesson.three.task.model.Plane;
-import lesson.three.task.model.Ship;
+import lesson.three.task.factory.VehicleFactory;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Console {
@@ -21,7 +17,7 @@ public class Console {
         return instance;
     }
     public void start(){
-        loadData();
+        loadData(10);
         try(Scanner scanner = new Scanner(System.in)) {
             System.out.println("Hello\nSelect operation from " +
                     "the list by entering the number of the method");
@@ -36,10 +32,11 @@ public class Console {
                         "Car not older than 5 years");
                 System.out.println("5. From the Mass Vehicle to receive the Ship array " +
                         "not older than 5 years, with a sorted price in descending order");
+                System.out.println("6. Create sequences IFly, ISwim, IMove ");
                 numberOfMethod = scanner.nextInt();
                 switch (numberOfMethod) {
                     case 1:
-                        handler.displayVehicles();
+                        handler.displayArray(handler.getArray());
                         break;
                     case 2:
                         handler.getMaxPrice();
@@ -52,6 +49,9 @@ public class Console {
                         break;
                     case 5:
                         handler.getShipByYearAndPrice();
+                        break;
+                    case 6:
+                        interfaceSequences();
                         break;
                     default:
                         System.out.println("You entered wrong number of method");
@@ -76,28 +76,82 @@ public class Console {
             System.out.println("Good bye!");
         }
     }
-    public void loadData(){
-        handler.add(new Car(new Coordinate(5,7), 12000, 170, 2007));
-        handler.add(new Car(new Coordinate(5,7), 15000, 190, 2013));
-        handler.add(new Car(new Coordinate(5,7), 24000, 210, 2015));
-        handler.add(new Car(new Coordinate(5,7), 26000, 230, 2016));
-        handler.add(new Car(new Coordinate(5,7), 10000, 160, 2005));
-        handler.add(new Car(new Coordinate(5,7), 43000, 250, 2016));
-        handler.add(new Plane(new Coordinate(60,53), 150000, 450,
-                2007, 1000, 80 ));
-        handler.add(new Plane(new Coordinate(60,53), 210000, 600,
-                2014, 2000, 100 ));
-        handler.add(new Plane(new Coordinate(60,53), 300000, 750,
-                2016, 3000, 80 ));
-        handler.add(new Plane(new Coordinate(60,53), 100000, 400,
-                2009, 1000, 80 ));
-        handler.add(new Ship(new Coordinate(6,43), 200000, 200, 2000,
-                "Istanbul", 300));
-        handler.add(new Ship(new Coordinate(6,43), 250000, 300, 2015,
-                "Cyprus", 300));
-        handler.add(new Ship(new Coordinate(6,43), 450000, 350, 2016,
-                "Sydney", 300));
-        handler.add(new Ship(new Coordinate(6,43), 500000, 370, 2017,
-                "Malta", 300));
+    public void loadData(int numberOfVehicle){
+        loadVehicle(numberOfVehicle);
+    }
+    private void loadVehicle(int n){
+        VehicleFactory factory = new VehicleFactory();
+        for (int i = 0; i<n;i++){
+            handler.add(factory.randomVehicle());
+        }
+    }
+    private void interfaceSequences(){
+        try(Scanner scanner = new Scanner(System.in)){
+            int numberOfMethod;
+            boolean isExit = false;
+            while (!isExit) {
+                System.out.println("Select operation from " +
+                        "the list by entering the number of the method");
+                System.out.println("1. Display interfaces.");
+                System.out.println("2. Sort IFly by ascending");
+                System.out.println("3. Sort IFly by descending");
+                System.out.println("4. Sort IMove by ascending");
+                System.out.println("5. Sort IMove by descending");
+                System.out.println("6. Sort ISwim by ascending");
+                System.out.println("7. Sort ISwim by descending");
+                numberOfMethod = scanner.nextInt();
+                switch (numberOfMethod) {
+                    case 1:
+                        handler.displayArray(handler.getCanFly());
+                        System.out.println();
+                        handler.displayArray(handler.getCanMove());
+                        System.out.println();
+                        handler.displayArray(handler.getCanSwim());
+                        System.out.println();
+                        break;
+                    case 2:
+                        handler.ascendingSortBySpeed(handler.getCanFly());
+                        handler.displayArray(handler.getCanFly());
+                        break;
+                    case 3:
+                        handler.descendingSortBySpeed(handler.getCanFly());
+                        handler.displayArray(handler.getCanFly());
+                        break;
+                    case 4:
+                        handler.ascendingSortBySpeed(handler.getCanMove());
+                        handler.displayArray(handler.getCanMove());
+                        break;
+                    case 5:
+                        handler.descendingSortBySpeed(handler.getCanMove());
+                        handler.displayArray(handler.getCanMove());
+                        break;
+                    case 6:
+                        handler.ascendingSortBySpeed(handler.getCanSwim());
+                        handler.displayArray(handler.getCanSwim());
+                        break;
+                    case 7:
+                        handler.descendingSortBySpeed(handler.getCanSwim());
+                        handler.displayArray(handler.getCanSwim());
+                        break;
+                    default:
+                        System.out.println("You entered wrong number");
+                }
+                boolean choiceFlag = true;
+                while (choiceFlag) {
+                    System.out.println("Are you want continue?\n1. Yes\n2. No");
+                    int choice = scanner.nextInt();
+                    if (choice != 2 && choice != 1) {
+                        System.out.println("You entered wrong number");
+                    }
+                    if (choice == 2) {
+                        choiceFlag = false;
+                        isExit = true;
+                    }
+                    if (choice == 1) {
+                        choiceFlag = false;
+                    }
+                }
+            }
+        }
     }
 }

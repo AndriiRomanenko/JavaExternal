@@ -16,18 +16,6 @@ public class Polygon extends Geometry {
         this.polygon = lines;
     }
 
-    public static void main(String[] args) {
-        Point point1 = new Point(0,0);
-        Point point2 = new Point(0,10);
-        Point point3 = new Point(10,10);
-        Point point4 = new Point(10,0);
-        Line line1 = new Line(point1, point2);
-        Line line2 = new Line(point2, point3);
-        Line line3 = new Line(point3, point4);
-        Line line4 = new Line(point4,point1);
-        Polygon polygon = new Polygon(line1,line2,line3,line4);
-        System.out.println(polygon);
-    }
     private void checkPolygon(Line[] lines){
         if(lines.length < 3){
             throw new IllegalArgumentException("Few segments for constructing a polygon");

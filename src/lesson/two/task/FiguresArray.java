@@ -16,19 +16,11 @@ public class FiguresArray {
         this.size = 0;
     }
 
-    public static void main(String[] args) {
-        FiguresArray figures = new FiguresArray();
-        figures.addFigure(new Point());
-        figures.addFigure(new Line(new Point(3,4), new Point(5,6)));
-        figures.addFigure(new ColorPoint());
-        figures.addFigure(new ColorPoint("Green"));
-        figures.addFigure(new ColorLine("Black"));
-        figures.addFigure(new Triangle(new Point(2,2), new Point(3,3), new Point(4,5)));
-        figures.addFigure(new Point(6,9));
-        figures.display();
-
+    public void add(Geometry figure){
+        addFigure(figure);
     }
-    public void addFigure(Geometry figure){
+
+    private void addFigure(Geometry figure){
         if (size < array.length-1){
             array[size] = figure;
             ++size;
@@ -51,7 +43,7 @@ public class FiguresArray {
         array = temp;
     }
 
-    private void display(){
+    public void display(){
         for(int i = 0; i<size; i++){
             System.out.println(array[i]);
         }

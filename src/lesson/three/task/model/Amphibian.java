@@ -1,26 +1,22 @@
 package lesson.three.task.model;
 
+import lesson.three.task.service.IFly;
 import lesson.three.task.service.IMove;
+import lesson.three.task.service.ISwim;
 
-public class Car extends Vehicle implements IMove {
+
+public class Amphibian extends Vehicle implements ISwim, IMove {
     private Engine engine;
-    public Car(Coordinate coordinates, double price, int speed, int yearOfIssue,
-               String typeOfFuel, int capacityOfFuel) {
+    public Amphibian(Coordinate coordinates, double price, int speed, int yearOfIssue,
+            String fuel) {
         super(coordinates, price, speed, yearOfIssue);
-        this.engine = new Car.Engine(typeOfFuel, capacityOfFuel);
+        this.engine = new Engine(fuel);
     }
-
-    public class Engine {
+    static class Engine{
         private String typeOfFuel;
-        private int capacityOfEngine;
-        public Engine(String typeOfFuel, int capacityOfEngine){
+        public Engine(String typeOfFuel){
             this.typeOfFuel = typeOfFuel;
-            this.capacityOfEngine = capacityOfEngine;
         }
-    }
-
-    public Engine getEngine(){
-        return engine;
     }
 
     @Override
@@ -31,7 +27,7 @@ public class Car extends Vehicle implements IMove {
                 ", speed: " + super.getSpeed() +
                 ", yearOfIssue: " + super.getYearOfIssue() +
                 ", type of fuel: " + engine.typeOfFuel +
-                ", capacity of fuel: " + engine.capacityOfEngine +
                 ']';
     }
+
 }
