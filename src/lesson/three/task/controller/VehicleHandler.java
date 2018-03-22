@@ -1,7 +1,5 @@
 package lesson.three.task.controller;
 
-import lesson.three.task.model.Car;
-import lesson.three.task.model.Ship;
 import lesson.three.task.model.Vehicle;
 import lesson.three.task.service.ICan;
 import lesson.three.task.service.IFly;
@@ -9,6 +7,8 @@ import lesson.three.task.service.IMove;
 import lesson.three.task.service.ISwim;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class VehicleHandler {
     private Vehicle[] array;
@@ -69,14 +69,14 @@ public class VehicleHandler {
         System.out.println(vehicle);
     }
 
-    private Car[] sortCars(Vehicle[] array){
-        Car[] temp = new Car[array.length];
+    private IMove[] sortCars(Vehicle[] array){
+        IMove[] temp = new IMove[array.length];
         int tempCount = 0;
         int searchYear = 5;
         for (int i = 0; i<array.length; i++){
-            if(array[i] instanceof Car
+            if(array[i] instanceof IMove
                     && ((LocalDate.now().getYear()-array[i].getYearOfIssue())<=searchYear)){
-                temp[tempCount++] = (Car)array[i];
+                temp[tempCount++] = (IMove)array[i];
             }
         }
         System.arraycopy(temp,0,temp,0,tempCount);
@@ -122,40 +122,40 @@ public class VehicleHandler {
         display(getShips(array));
     }
 
-    private Ship[] getShips(Vehicle[] array){
-        Ship[] temp = new Ship[array.length];
+    private ISwim[] getShips(Vehicle[] array){
+        ISwim[] temp = new ISwim[array.length];
         int tempCount = 0;
         int searchYear = 5;
         for (int i = 0; i<array.length; i++){
-            if(array[i] instanceof Ship
+            if(array[i] instanceof ISwim
                     && ((LocalDate.now().getYear()-array[i].getYearOfIssue())<=searchYear)){
-                temp[tempCount++] = (Ship)array[i];
+                temp[tempCount++] = (ISwim)array[i];
             }
         }
         System.arraycopy(temp,0,temp,0,tempCount);
-        sortByDescending(temp);
-        return temp;
-
+        return sortByDescending(temp);
     }
 
-    private void sortByDescending(Vehicle[] array){
-        Vehicle max;
-        for(int i = 0; i<array.length-1; i++){
-            max = array[i];
-            for(int j = i+1; j<array.length; j++){
-                if (array[j] instanceof Vehicle &&
-                        array[j].getPrice() > max.getPrice()) {
-                    max = array[j];
+    private ISwim[] sortByDescending(ISwim[] array){
+        ISwim[] temp = new ISwim[array.length];
+        System.arraycopy(array,0,temp,0,array.length);
+        for(int i = temp.length-1; i>1; i--){
+            for(int j = 0; j<i; j++){
+                Vehicle first = (Vehicle)temp[j];
+                Vehicle second = (Vehicle)temp[j+1];
+                if(first instanceof Vehicle && second instanceof Vehicle &&
+                    first.getPrice()<second.getPrice()){
+                    swap(j, j+1, temp);
                 }
-                swap(array[i],max);
             }
         }
+        return temp;
     }
 
-    private void swap(Vehicle one, Vehicle two){
-        Vehicle temp = one;
-        one = two;
-        two = temp;
+    private <T> void swap(int one, int two, T[] array){
+        T temp = array[one];
+        array[one] = array[two];
+        array[two] = temp;
     }
 
     public int getMinSpeed(Vehicle[] array){
@@ -187,15 +187,27 @@ public class VehicleHandler {
     }
 
     public IFly[] getCanFly(){
-        return canFly = getFly(array);
+        return canFly;
+    }
+
+    public void setCanFly() {
+        canFly = getFly(array);
     }
 
     public IMove[] getCanMove(){
-        return canMove = getMove(array);
+        return canMove;
+    }
+
+    public void setCanMove(){
+        canMove = getMove(array);
     }
 
     public ISwim[] getCanSwim(){
-       return canSwim = getSwim(array);
+       return canSwim;
+    }
+
+    public void setCanSwim(){
+        canSwim = getSwim(array);
     }
 
     private IFly[] getFly(Vehicle[] array){
@@ -238,41 +250,43 @@ public class VehicleHandler {
     }
 
     public void ascendingSortBySpeed(ICan[] array){
-        ascendingSort(array);
+        displayArray(ascendingSort(array));
     }
 
     public void descendingSortBySpeed(ICan[] array){
-        ascendingSort(array);
+        displayArray(descendingSort(array));
     }
 
-    private void ascendingSort(ICan[] array){
-        Vehicle max;
-        for(int i = 0; i<array.length-1; i++){
-            max = (Vehicle)array[i];
-            for(int j = i+1; j<array.length; j++){
-                Vehicle searchElement = (Vehicle)array[j];
-                if (searchElement instanceof Vehicle &&
-                        searchElement.getSpeed() > max.getSpeed()) {
-                    max = searchElement;
+    private ICan[] ascendingSort(ICan[] array){
+        ICan[] temp = new ICan[array.length];
+        System.arraycopy(array,0,temp,0,array.length);
+        for(int i = temp.length-1; i>1; i--){
+            for(int j = 0; j<i; j++){
+                Vehicle first = (Vehicle)temp[j];
+                Vehicle second = (Vehicle)temp[j+1];
+                if(first instanceof Vehicle && second instanceof Vehicle &&
+                        first.getSpeed()>second.getSpeed()){
+                    swap(j, j+1, temp);
                 }
-                swap(searchElement,max);
             }
         }
+        return temp;
     }
 
-    private void descendingSort(ICan[] array){
-        Vehicle min;
-        for(int i = 0; i<array.length-1; i++){
-            min = (Vehicle)array[i];
-            for(int j = i+1; j<array.length; j++){
-                Vehicle searchElement = (Vehicle)array[j];
-                if (searchElement instanceof Vehicle &&
-                        searchElement.getSpeed() < min.getSpeed()) {
-                    min = searchElement;
+    private ICan[] descendingSort(ICan[] array){
+        ICan[] temp = new ICan[array.length];
+        System.arraycopy(array,0,temp,0,array.length);
+        for(int i = temp.length-1; i>1; i--){
+            for(int j = 0; j<i; j++){
+                Vehicle first = (Vehicle)temp[j];
+                Vehicle second = (Vehicle)temp[j+1];
+                if(first instanceof Vehicle && second instanceof Vehicle &&
+                        first.getSpeed()<second.getSpeed()){
+                    swap(j, j+1, temp);
                 }
-                swap(searchElement,min);
             }
         }
+        return temp;
     }
 
 }
