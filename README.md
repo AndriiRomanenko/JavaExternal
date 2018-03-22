@@ -68,6 +68,7 @@ Cоздать класс Polygon для описания фигур разной
 ### 1. Task 1
 [to contents](#java-external)
 
+<<<<<<< HEAD
 Создать абстрактный класс [CVehicle](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Vehicle.java). На его основе реализовать классы 
 [CPlane](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Plane.java), 
 [CCar](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Car.java) и 
@@ -97,3 +98,15 @@ Cоздать класс Polygon для описания фигур разной
 [to contents](#java-external)
 
 Добавить к механизмам детали
+=======
+Создать абстрактный класс [CVehicle](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Vehicle.java). На его основе реализовать классы [CPlane](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Plane.java), [CCar](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Car.java) и [CShip](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/model/Ship.java). Классы должны иметь возможность задавать и получать координаты, параметры средств передвижения(цена, скорость, год выпуска). Для самолета должна быть определена высота, для самолета и корабля - количество пассажиров. Для корабля - порт приписки.
+
+Написать [программу](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/controller/VehicleHandler.java), создающую список объектов этих классов в динамической памяти. Программа должна содержать [меню](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/controller/Console.java), позволяющее осуществить проверку всех методов классов.
+
+1. Vehicle с наибольшей ценой. 
+2. Найти Vehicle год выпуска 2000-2005 со скоростью выше 150 км\ч, и наименьшей ценой.
+3. Из массива Vehicle получить массив Car не старше 5 лет.
+4. Из массива Vehicle получить массив Ship не старше 5 лет, с отсортированой ценой по убыванию.
+
+Запуск программы через класс [Main](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/three/task/Main.java)
+>>>>>>> 359fa8b5794e38a65cecb758b6ae15a515334c86

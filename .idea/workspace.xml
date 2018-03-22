@@ -1,63 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99eb2134-087b-41f4-b3fa-eba6a3c6989e" name="Default" comment="added two new tasks">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/factory/VehicleFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/Amphibian.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/BatCar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/resourse/Dictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/service/ICan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/service/IFly.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/service/IMove.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/three/task/service/ISwim.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lesson/two/task/Main.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/one/EquilateralTriangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/one/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/one/Rectangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/one/Rhombus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/one/RightTriangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/three/SortingColumnsByDescendingOrder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/three/SortingRowsByAscendingOrder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/three/Spiral.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/two/SortingMinusPlus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/one/task/two/SortingPlusMinus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/Abiturient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/Doctor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/Human.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/Program.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/Student.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/StudentZao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/VetDoctor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/Voin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/controller/Console.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/controller/VehicleHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/model/Car.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/model/Coordinate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/model/Plane.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/model/Ship.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/three/task/model/Vehicle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/ColorLine.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/ColorPoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/Geometry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/Line.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/Point.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/Triangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/task/FiguresArray.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaExternal_06_03_2018/lesson/two/task/Polygon.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/controller/Console.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/controller/Console.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/controller/VehicleHandler.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/controller/VehicleHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/model/Car.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/Car.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/model/Coordinate.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/Coordinate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/model/Plane.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/Plane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/model/Ship.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/Ship.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/three/task/model/Vehicle.java" afterPath="$PROJECT_DIR$/src/lesson/three/task/model/Vehicle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/two/task/FiguresArray.java" afterPath="$PROJECT_DIR$/src/lesson/two/task/FiguresArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson/two/task/Polygon.java" afterPath="$PROJECT_DIR$/src/lesson/two/task/Polygon.java" />
-    </list>
+    <list default="true" id="99eb2134-087b-41f4-b3fa-eba6a3c6989e" name="Default" comment="added two new tasks" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1150,7 +1094,7 @@
       <workItem from="1521533281535" duration="6115000" />
       <workItem from="1521547791555" duration="4695000" />
       <workItem from="1521659044493" duration="10591000" />
-      <workItem from="1521721426932" duration="1040000" />
+      <workItem from="1521721426932" duration="1176000" />
     </task>
     <task id="LOCAL-00001" summary="homework from first lesson">
       <created>1520793684671</created>
@@ -1184,7 +1128,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119072000" />
+    <option name="totallyTimeSpent" value="119208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
