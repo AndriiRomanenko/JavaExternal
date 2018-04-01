@@ -4,22 +4,22 @@
 
 # Java external
 
-- [Lesson 1](#Lesson-1)
-    - [Task 1](#Task-1)
-    - [Task 2](#Task-2)
-    - [Task 3](#Task-3)
-- [Lesson 2](#Lesson-2)
-    - [Task 1](#Task-1)
-    - [Task 2](#Task-2)
-- [Lesson 3](#Lesson-3)
-    - [Task 1](#Task-1)
-    - [Task 2](#Task-2)
-    - [Task 3](#Task-3)
-- [Lesson 4](#Lesson-4)
-    - [Task 1](#Task-1)
-    - [Task 2](#Task-2)
-- [Lesson 5](#Lesson-5)
-    - [Task 1](#Task-1)
+- [I. Lesson 1](#i-Lesson-1)
+    - [1. Task 1](#1-Task-1)
+    - [2. Task 2](#2-Task-2)
+    - [3. Task 3](#3-Task-3)
+- [II. Lesson 2](#i-Lesson-2)
+    - [1. Task 1](#1-Task-1)
+    - [2. Task 2](#2-Task-2)
+- [III. Lesson 3](#i-Lesson-3)
+    - [1. Task 1](#1-Task-1)
+    - [2. Task 2](#2-Task-2)
+    - [3. Task 3](#3-Task-3)
+- [IV. Lesson 4](#i-Lesson-4)
+    - [1. Task 1](#1-Task-1)
+    - [2. Task 2](#2-Task-2)
+- [V. Lesson 5](#i-Lesson-5)
+    - [1. Task 1](#1-Task-1)
     
 ## Lesson 1
 
