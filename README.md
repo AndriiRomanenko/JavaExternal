@@ -21,9 +21,9 @@
 - [V. Lesson 5](#i-Lesson-5)
     - [1. Task 1](#1-Task-1)
     
-## Lesson 1
+## I. Lesson 1
 
-### Task 1
+### 1. Task 1
 [to contents](#java-external)
 
 Используя циклы и метод: System.out.print("* "), System.out.print("  "), System.out.print("\n")
@@ -36,7 +36,7 @@
 
 Класс [Main.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/one/Main.java) для тестового запуска классов
 
-### Task 2
+### 2. Task 2
 [to contents](#java-external)
 
 Сортировка последовательности  
@@ -44,7 +44,7 @@
    затем положительные по убыванию. [SortingMinusPlus.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/two/SortingMinusPlus.java)
 2. В одномерном массиве сначала положительные потом отрицательные за О(n). [SortingPlusMinus.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/two/SortingPlusMinus.java)
 
-### Task 3
+### 3. Task 3
 [to contents](#java-external)
 
 Дана целочисленная прямоугольная матрица. 
@@ -53,23 +53,23 @@
 3. Дана квадратная матрица A порядка M (M — нечетное число). Начиная с элемента A1,1 и перемещаясь по часовой стрелке, вывести все ее элементы по спирали: первая строка, последний столбец, последняя строка в обратном  порядке,  первый  столбец  в  обратном  порядке,  оставшиеся  элементы второй строки и т. д.; последним выводится центральный элемент 
 матрицы. [Spiral.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/three/Spiral.java)
 
-## Lesson 2
+## II. Lesson 2
 
-### Task 1
+### 1. Task 1
 [to contents](#java-external)
 
 Cоздать динамический массив из разных фигур и вывести информацию на экран. [FiguresArray.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/FiguresArray.java)
 
-### Task 2
+### 2. Task 2
 [to contents](#java-external)
 
 Cоздать класс Polygon для описания фигур разной размерности. [Polygon.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
 
 Класс [Main.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Main.java) для запуска заданий
 
-## Lesson 3
+## III. Lesson 3
 
-### Task 1
+### 1. Task 1
 [to contents](#java-external)
 
 Создать абстрактный класс [CVehicle](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Vehicle.java). На его основе реализовать классы 
@@ -86,7 +86,7 @@ Cоздать класс Polygon для описания фигур разной
 3. Из Масива Vehicle получить масив Car не старше 5 лет
 4. Из Масива Vehicle получить масив Ship не старше 5 лет, с  отсортированой ценой по убыванию
 
-### Task 2
+### 2. Task 2
 [to contents](#java-external)
 
 1. Добавить машину [Амфибию](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Amphibian.java),
@@ -97,27 +97,27 @@ Cоздать класс Polygon для описания фигур разной
 2. Создать 3 последовательности  IFly, ISwim, IMove.
 В рамках каждой последовательности упорядочить по скорости (методы Мин и Макс)
 
-### Task 3
+### 3. Task 3
 [to contents](#java-external)
 
 Добавить к механизмам детали
 
-## Lesson 4
+## IV. Lesson 4
 
-### Task 1
+### 1. Task 1
 [to contents](#java-external)
 
 Сериализовать фигуры: 3 точки, 3 линии и 1 треугольник. При десериализации треугольника отобразить сколько обєктов
 
-### Task 2
+### 2. Task 2
 [to contents](#java-external)
 
 Сделать 3 файла с сериализованным [Polygon](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
 , который будет описывать 3 разные фигуры. Так же десериализовать и отобразить на экран.
 
-### Lesson 5
+### V. Lesson 5
 
-### Task 1
+### 1. Task 1
 [to contents](#java-external)
 
 Составить программу, отыскивающую проход по лабиринту.
