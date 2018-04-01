@@ -4,6 +4,9 @@ import lesson.two.Geometry;
 import lesson.two.Line;
 import lesson.two.Point;
 
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
 import java.util.Arrays;
 
 /**
@@ -11,21 +14,39 @@ import java.util.Arrays;
  */
 public class Polygon extends Geometry {
     private Line[] polygon;
+    private int[] pointsX;
+    private int[] pointsY;
     public Polygon(Line ... lines){
         checkPolygon(lines);
         this.polygon = lines;
+        this.pointsX = new int[polygon.length];
+        this.pointsY = new int[polygon.length];
+        getPoints();
     }
 
     private void checkPolygon(Line[] lines){
         if(lines.length < 3){
             throw new IllegalArgumentException("Few segments for constructing a polygon");
         }
-        if(!isAngleArray(lines)){
-            throw new IllegalArgumentException("One or more segments do not intersect");
-        }
+//        if(!isAngleArray(lines)){
+//            throw new IllegalArgumentException("One or more segments do not intersect");
+//        }
         if(checkAngleOn180(lines)){
             throw new IllegalArgumentException("Two sides shouldn't make an angle of 180 degrees");
         }
+    }
+
+    private void getPoints(){
+        for(int i = 0; i<polygon.length; i++){
+            pointsX[0] = polygon[0].getBegin().getX();
+            pointsY[0] = polygon[0].getBegin().getY();
+        }
+    }
+    public int[] getPointsX(){
+        return pointsX;
+    }
+    public int[] getPointsY(){
+        return pointsY;
     }
 
     private boolean isAngleArray(Line[] lines){
@@ -66,7 +87,7 @@ public class Polygon extends Geometry {
 
     @Override
     public String toString() {
-        return "Polygon{" +
+        return "DrawPolygon{" +
                 "polygon=" + Arrays.toString(polygon) +
                 '}';
     }

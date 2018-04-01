@@ -1,15 +1,21 @@
 package lesson.two;
 
+
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
+
 /**
  * Created by adrie on 14.03.2018.
  */
-public class Triangle extends Geometry{
+public class Triangle extends Geometry {
     private Point pointA;
     private Point pointB;
     private Point pointC;
     private Line apexAB;
     private Line apexBC;
     private Line apexCA;
+    private static final long serialVersionUID = 1L;
     public Triangle(Point a, Point b, Point c){
         this.pointA = a;
         this.pointB = b;
@@ -18,6 +24,9 @@ public class Triangle extends Geometry{
         setApexBC(b,c);
         setApexCA(c,a);
         checkIsTriangle(apexAB,apexBC,apexCA);
+    }
+    public Triangle(){
+        super();
     }
 
     public Point getPointA() {
