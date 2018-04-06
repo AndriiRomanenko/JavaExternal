@@ -1,16 +1,24 @@
 package lesson.six;
 
+import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-/**
- * Created by adrie on 30.03.2018.
- */
+
 public class Main {
-    public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-       
-}
+    public static void main(String[] args){
+        Handler handler = new Handler();
+        List<String> listOfReferences = handler.
+                getListOfReferencesByURL("http://www.stihi-rus.ru/World/Shekspir/");
+//        handler.display(listOfReferences);
+
+
+    }
+
+
+
 }

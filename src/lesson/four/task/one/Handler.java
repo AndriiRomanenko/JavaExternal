@@ -11,7 +11,7 @@ import java.io.InvalidObjectException;
  */
 public class Handler {
     private Triangle triangle;
-    private final String path = "src\\resources\\serializationDemo";
+    private final String path = "src\\resources\\lesson\\four\\serializationDemo";
     public Handler(){
         this.triangle = getTriangle();
     }

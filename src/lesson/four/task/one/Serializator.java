@@ -5,9 +5,7 @@ import lesson.two.Geometry;
 import java.io.*;
 import java.lang.reflect.Field;
 
-/**
- * Created by adrie on 22.03.2018.
- */
+
 public class Serializator implements Serializable {
     private Field[] fields;
     public void serialization(Geometry figure, String fileName){

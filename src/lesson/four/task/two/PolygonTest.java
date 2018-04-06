@@ -28,9 +28,9 @@ public class PolygonTest {
         return polygons;
     }
     private String[] getPaths(){
-        String[] files = {"src\\resources\\polygonOne",
-                "src\\resources\\polygonTwo",
-                "src\\resources\\polygonThree"
+        String[] files = {"src\\resources\\lesson\\four\\polygonOne",
+                "src\\resources\\lesson\\four\\polygonTwo",
+                "src\\resources\\lesson\\four\\polygonThree"
         };
         return files;
     }
