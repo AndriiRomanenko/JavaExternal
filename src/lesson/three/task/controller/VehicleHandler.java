@@ -7,8 +7,6 @@ import lesson.three.task.service.IMove;
 import lesson.three.task.service.ISwim;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Comparator;
 
 public class VehicleHandler {
     private Vehicle[] array;
@@ -109,7 +107,7 @@ public class VehicleHandler {
         for(int i = 1; i<array.length; i++){
             if(array[i] instanceof Vehicle &&
                     (array[i].getYearOfIssue() >= minYear
-                    && array[i].getYearOfIssue() <= maxYear )
+                            && array[i].getYearOfIssue() <= maxYear )
                     && array[i].getSpeed() > speed
                     && array[i].getPrice() < temp.getPrice()){
                 temp = array[i];
@@ -144,7 +142,7 @@ public class VehicleHandler {
                 Vehicle first = (Vehicle)temp[j];
                 Vehicle second = (Vehicle)temp[j+1];
                 if(first instanceof Vehicle && second instanceof Vehicle &&
-                    first.getPrice()<second.getPrice()){
+                        first.getPrice()<second.getPrice()){
                     swap(j, j+1, temp);
                 }
             }
@@ -203,7 +201,7 @@ public class VehicleHandler {
     }
 
     public ISwim[] getCanSwim(){
-       return canSwim;
+        return canSwim;
     }
 
     public void setCanSwim(){
