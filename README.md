@@ -5,25 +5,28 @@
 # Java external
 
 - [I. Lesson 1](#i-lesson-1)
-    - [I. Task 1](#i-task-1)
-    - [I. Task 2](#i-task-2)
-    - [I. Task 3](#i-task-3)
+    - [Task 1](#i-task-1)
+    - [Task 2](#i-task-2)
+    - [Task 3](#i-task-3)
 - [II. Lesson 2](#ii-lesson-2)
-    - [II. Task 1](#ii-task-1)
-    - [II. Task 2](#ii-task-2)
+    - [Task 1](#ii-task-1)
+    - [Task 2](#ii-task-2)
 - [III. Lesson 3](#iii-lesson-3)
-    - [III. Task 1](#iii-task-1)
-    - [III. Task 2](#iii-task-2)
-    - [III. Task 3](#iii-task-3)
+    - [Task 1](#iii-task-1)
+    - [Task 2](#iii-task-2)
+    - [Task 3](#iii-task-3)
 - [IV. Lesson 4](#iv-lesson-4)
-    - [IV. Task 1](#iv-task-1)
-    - [IV. Task 2](#iv-task-2)
+    - [Task 1](#iv-task-1)
+    - [Task 2](#iv-task-2)
 - [V. Lesson 5](#v-lesson-5)
-    - [V. Task 1](#v-task-1)
+    - [Task 1](#v-task-1)
+- [VI. Lesson 6](#vi-lesson-6)
+    - [Task 1](#vi-task-1)
+    - [Task 2](#vi-task-2)
     
 ## I. Lesson 1
 
-### I. Task 1
+### Task 1
 [to contents](#java-external)
 
 Используя циклы и метод: System.out.print("* "), System.out.print("  "), System.out.print("\n")
@@ -36,7 +39,7 @@
 
 Класс [Main.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/one/Main.java) для тестового запуска классов
 
-### I. Task 2
+### Task 2
 [to contents](#java-external)
 
 Сортировка последовательности  
@@ -44,7 +47,7 @@
    затем положительные по убыванию. [SortingMinusPlus.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/two/SortingMinusPlus.java)
 2. В одномерном массиве сначала положительные потом отрицательные за О(n). [SortingPlusMinus.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/one/task/two/SortingPlusMinus.java)
 
-### I. Task 3
+### Task 3
 [to contents](#java-external)
 
 Дана целочисленная прямоугольная матрица. 
@@ -55,12 +58,12 @@
 
 ## II. Lesson 2
 
-### II. Task 1
+### Task 1
 [to contents](#java-external)
 
 Cоздать динамический массив из разных фигур и вывести информацию на экран. [FiguresArray.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/FiguresArray.java)
 
-### II. Task 2
+### Task 2
 [to contents](#java-external)
 
 Cоздать класс Polygon для описания фигур разной размерности. [Polygon.java](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
@@ -69,7 +72,7 @@ Cоздать класс Polygon для описания фигур разной
 
 ## III. Lesson 3
 
-### III. Task 1
+### Task 1
 [to contents](#java-external)
 
 Создать абстрактный класс [CVehicle](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Vehicle.java). На его основе реализовать классы 
@@ -86,7 +89,7 @@ Cоздать класс Polygon для описания фигур разной
 3. Из Масива Vehicle получить масив Car не старше 5 лет
 4. Из Масива Vehicle получить масив Ship не старше 5 лет, с  отсортированой ценой по убыванию
 
-### III. Task 2
+### Task 2
 [to contents](#java-external)
 
 1. Добавить машину [Амфибию](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/src/lesson/three/task/model/Amphibian.java),
@@ -97,27 +100,27 @@ Cоздать класс Polygon для описания фигур разной
 2. Создать 3 последовательности  IFly, ISwim, IMove.
 В рамках каждой последовательности упорядочить по скорости (методы Мин и Макс)
 
-### III. Task 3
+### Task 3
 [to contents](#java-external)
 
 Добавить к механизмам детали
 
 ## IV. Lesson 4
 
-### IV. Task 1
+### Task 1
 [to contents](#java-external)
 
 Сериализовать фигуры: 3 точки, 3 линии и 1 треугольник. При десериализации треугольника отобразить сколько обєктов
 
-### IV. Task 2
+### Task 2
 [to contents](#java-external)
 
 Сделать 3 файла с сериализованным [Polygon](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/two/task/Polygon.java)
 , который будет описывать 3 разные фигуры. Так же десериализовать и отобразить на экран.
 
-### V. Lesson 5
+## V. Lesson 5
 
-### V. Task 1
+### Task 1
 [to contents](#java-external)
 
 Составить программу, отыскивающую проход по лабиринту.
@@ -129,3 +132,15 @@ Cоздать класс Polygon для описания фигур разной
 Программа находит проход через лабиринт, двигаясь от заданного входа.
 После отыскания прохода программа выводит найденный путь в виде координат квадратов. Для хранения
 пути использовать стэк.
+
+## VI. Lesson 6
+
+### Task 1
+[to contents](#java-external)
+
+Написать поисковый [сервис](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/out/production/JavaExternal_06_03_2018/lesson/six/task/one/Handler.java). По указаному слову найти все URL упорядоченые по возрастанию частоты слова. Список из 20 ключевых слов.
+
+### Task 2
+[to contents](#java-external)
+
+Создать [программу](https://github.com/AndriiRomanenko/JavaExternal_06_03_2018/blob/master/src/lesson/six/task/two/Converter.java) обработки текста. Преобразовать каждое слово в тексте, удалив из него все последующие (предыдущие) вхождения первой (последней) буквы этого слова.
