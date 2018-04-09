@@ -1,4 +1,6 @@
-package lesson.six;
+package lesson.six.task.one;
+
+import lesson.six.task.one.Handler;
 
 import java.util.ArrayList;
 import java.util.List;

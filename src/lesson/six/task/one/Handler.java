@@ -1,4 +1,4 @@
-package lesson.six;
+package lesson.six.task.one;
 
 import java.io.BufferedReader;
 import java.io.IOException;
